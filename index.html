@@ -1,0 +1,2617 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Hiring a contractor in Georgia: the 1% status, and who can&rsquo;t have it | Kleos</title>
+<style>
+/* =========================================================
+   Kleos landing — Figma → HTML (proof: Navbar + Hero + Calculator)
+   Design width: 1440px, pixel-perfect desktop.
+   Font "Kleos Schengen A Cyrillic" is proprietary — falls back
+   to system sans; drop your @font-face declaration below to enable.
+   ========================================================= */
+
+/* @font-face { font-family: "Kleos Schengen A Cyrillic"; src: url("...") format("woff2"); font-weight: 400; }
+   @font-face { font-family: "Kleos Schengen A Cyrillic"; src: url("...") format("woff2"); font-weight: 500; } */
+
+:root {
+    --c-text:       #141414;
+    --c-text-2:     #3a414a;
+    --c-text-3:     #7e858f;
+    --c-text-muted: #6b6b6b;
+    --c-border:     #ebebeb;
+    --c-border-2:   #a1a7af;
+    --c-bg-gray:    #f5f5f5;
+    --c-green:      #009423;
+    --c-green-dk:   #004310;
+    --c-green-acc:  #149b34;
+    --c-orange:     #f66200;
+    --c-blue:       #44b0cd;
+    --c-white:      #ffffff;
+    --font: "Kleos Schengen A Cyrillic", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+    font-family: var(--font);
+    color: var(--c-text);
+    background: #fff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-feature-settings: "ss02" 1;
+}
+p { margin: 0; }
+img { display: block; max-width: none; }
+
+.landing {
+    width: 1440px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* -------------------------------------------------------- */
+/* NAVBAR (node 1:2329) — 1440 × 80                          */
+/* -------------------------------------------------------- */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    padding: 24px 50px;
+    background: #fff;
+    border-bottom: 1px solid var(--c-border);
+}
+.navbar__logo {
+    width: 149px;
+    height: 40px;
+    font-family: var(--font);
+    font-weight: 700;
+    font-size: 32px;
+    letter-spacing: -0.02em;
+    line-height: 40px;
+    color: var(--c-text);
+}
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.nav__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 32px;
+    padding: 6px 10px;
+    border-radius: 8px;
+    font-size: 16px;
+    line-height: 1.4;
+    letter-spacing: 0.01em;
+    color: var(--c-text);
+    text-decoration: none;
+}
+.actions {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    justify-content: flex-end;
+    width: 320px;
+}
+.pill {
+    display: inline-flex;
+    align-items: center;
+    height: 32px;
+    padding-left: 10px;
+    border-radius: 8px;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    line-height: 1;
+    background: var(--c-bg-gray);
+    color: var(--c-text);
+    text-decoration: none;
+    gap: 8px;
+}
+.pill__icon {
+    width: 32px; height: 32px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-left: 1px solid var(--c-border);
+}
+.pill--cta {
+    background: var(--c-green);
+    color: #fff;
+}
+.pill--cta .pill__icon {
+    border-left-color: rgba(255,255,255,.2);
+}
+
+/* -------------------------------------------------------- */
+/* HERO (node 1:2362) — 1340 × 636 centred, y=130            */
+/* -------------------------------------------------------- */
+.hero {
+    width: 1340px;
+    height: 636px;
+    margin: 50px auto 0;      /* 130 - 80 = 50 gap under navbar */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.hero__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 665px;
+    height: 636px;
+    padding-right: 72px;
+}
+.hero__trust {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    color: var(--c-text);
+    line-height: 1;
+}
+.hero__trust-flag { width: 32px; height: 32px; border-radius: 4px; overflow: hidden; }
+.hero__title {
+    font-weight: 500;
+    font-size: 56px;
+    line-height: 1.04;
+    letter-spacing: -0.02em;
+    color: var(--c-text);
+    font-feature-settings: "ss02" 1, "ss03" 1;
+}
+.hero__title .accent { color: var(--c-green-acc); }
+.hero__subtext {
+    width: 593px;
+    font-size: 20px;
+    line-height: 1.36;
+    color: var(--c-text);
+    margin-bottom: 20px;
+}
+.hero__buttons {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 48px;
+    padding-left: 16px;
+    gap: 16px;
+    border-radius: 10px;
+    font-size: 16px;
+    line-height: 1.4;
+    letter-spacing: 0.01em;
+    text-decoration: none;
+    border: 0;
+    cursor: pointer;
+    font-family: inherit;
+}
+.btn__arrow {
+    width: 48px; height: 48px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-left: 1px solid rgba(20,20,20,.12);
+}
+.btn--primary {
+    background: var(--c-green);
+    color: #fff;
+}
+.btn--primary .btn__arrow { border-left-color: rgba(255,255,255,.2); }
+.btn--secondary {
+    background: var(--c-bg-gray);
+    color: var(--c-text);
+}
+
+.hero__image {
+    width: 665px;
+    height: 636px;
+    border-radius: 20px;
+    background: var(--c-bg-gray);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--c-text-3);
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    border: 1px dashed var(--c-border-2);
+    /* PLACEHOLDER — заменить на Screenshot 2026-04-01 at 10.42.22 (665×636) */
+}
+
+/* -------------------------------------------------------- */
+/* MAIN CONTAINER — dark hero (node 1:2408) 1440 × 1037      */
+/* y = 866 → gap over hero end (766) = 100                    */
+/* -------------------------------------------------------- */
+.dark {
+    position: relative;
+    width: 1440px;
+    height: 1037px;
+    margin-top: 100px;
+    background: var(--c-text);
+    overflow: hidden;
+    color: #fff;
+}
+.dark__grain {
+    position: absolute;
+    left: -57px; top: -134px;
+    width: 1548px; height: 1267px;
+    opacity: .4;
+    background:
+        radial-gradient(circle at 30% 30%, rgba(255,255,255,.03) 0, transparent 60%),
+        repeating-radial-gradient(circle at 50% 50%, rgba(255,255,255,.02) 0 2px, transparent 2px 4px);
+    /* PLACEHOLDER — заменить на texture-grain 1 (1548×1267, 40% opacity) */
+    pointer-events: none;
+}
+.dark__decor {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+}
+.dark__decor::before,
+.dark__decor::after {
+    content: "PLACEHOLDER";
+    position: absolute;
+    font-size: 10px;
+    letter-spacing: .1em;
+    color: rgba(255,255,255,.25);
+    border: 1px dashed rgba(255,255,255,.15);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dark__decor::before {
+    /* Top decorative image cluster (~1099–1244, y=-31..117) */
+    left: 1099px; top: -31px;
+    width: 145px; height: 148px;
+}
+.dark__decor::after {
+    /* Big rotated top-right image (~1235, y=-121, 289×417) */
+    left: 1235px; top: -121px;
+    width: 205px; height: 417px;
+}
+.dark__title {
+    position: absolute;
+    left: 50px; top: 50px;
+    width: 890px;
+    padding-right: 32px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.dark__title h2 {
+    margin: 0;
+    font-weight: 500;
+    font-size: 80px;
+    line-height: 1.04;
+    letter-spacing: -0.02em;
+    font-feature-settings: "ss02" 1, "ss03" 1;
+    white-space: nowrap;
+}
+.dark__title p {
+    font-size: 20px;
+    line-height: 1.4;
+    color: #fff;
+}
+
+/* --- Calculator card 1340 × 645, y=342 --------------------- */
+.calc {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 342px;
+    width: 1340px;
+    height: 645px;
+    background: var(--c-bg-gray);
+    border-radius: 20px;
+    overflow: hidden;
+}
+.calc__tabs {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    width: 1300px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+.calc__tabs-inner {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.calc__tab {
+    width: 409px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px 12px;
+    border-radius: 8px;
+    background: var(--c-bg-gray);
+    color: var(--c-text);
+}
+.calc__tab--active {
+    background: var(--c-green-dk);
+    color: #fff;
+}
+.calc__tab-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.009em;
+    margin: 0;
+}
+.calc__tab-sub {
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    margin: 0;
+}
+
+/* Input card (left) — 640 × 485, x=20, y=140 */
+.calc__card {
+    position: absolute;
+    top: 140px;
+    width: 640px;
+    height: 485px;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+}
+.calc__card--left { left: 20px; }
+.calc__card--right { left: 680px; }
+
+.seg {
+    position: absolute;
+    left: 20px; right: 20px; top: 20px;
+    height: 41px;
+    background: var(--c-bg-gray);
+    border-radius: 10px;
+}
+.seg__btn {
+    position: absolute;
+    left: 4px; top: 4px;
+    height: 33px;
+    width: 298px;
+    background: #fff;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: var(--c-text);
+}
+.seg__label {
+    position: absolute;
+    right: 4px; top: 4px;
+    height: 33px;
+    width: 298px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: var(--c-text-2);
+}
+
+.input {
+    position: absolute;
+    left: 20px;
+    top: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.input__label {
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    color: var(--c-text-2);
+    text-transform: none;
+}
+.input__field-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 600px;
+}
+.input__field {
+    height: 48px;
+    width: 600px;
+    padding: 10px 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--c-white);
+    border: 1px solid var(--c-border-2);
+    border-radius: 8px;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+    color: var(--c-text);
+}
+.input__hint {
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    color: var(--c-text-3);
+}
+
+/* Right card — breakdown ---------------------------------- */
+.bar {
+    position: absolute;
+    left: 20px; top: 20px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.bar__track {
+    position: relative;
+    height: 13px;
+    background: var(--c-bg-gray);
+    border-radius: 4px;
+    overflow: hidden;
+}
+.bar__seg-green { position: absolute; inset: 0 10% 0 0; background: var(--c-green); }
+.bar__seg-orange { position: absolute; inset: 0 0 0 90%; background: var(--c-orange); }
+.legend {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.legend__item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+    line-height: 18.24px;
+    color: var(--c-text-muted);
+}
+.legend__dot { width: 10px; height: 10px; border-radius: 3px; }
+
+.rows {
+    position: absolute;
+    left: 20px;
+    top: 76px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 4px 0;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+}
+.row__label { color: var(--c-text-3); }
+.row__value { color: var(--c-text); text-align: right; }
+.row__value--total { font-weight: 500; font-size: 16px; line-height: 22px; letter-spacing: 0.01em; }
+.rows__sep { height: 1px; background: var(--c-border); }
+
+.summary {
+    position: absolute;
+    left: 20px;
+    top: 291px;
+    width: 600px;
+    height: 90px;
+    background: var(--c-bg-gray);
+    border-radius: 12px;
+}
+.summary__net {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(calc(-50% - 12px));
+    font-weight: 500;
+    font-size: 24.8px;
+    line-height: 37.2px;
+    color: var(--c-green);
+    white-space: nowrap;
+}
+.summary__label {
+    position: absolute;
+    left: 20px;
+    top: 54px;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    color: var(--c-text-3);
+}
+.summary__rate {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(calc(-50% - 10px));
+    font-weight: 500;
+    font-size: 24.8px;
+    line-height: 37.2px;
+    color: var(--c-text);
+    text-align: right;
+}
+.summary__rate-label {
+    position: absolute;
+    right: 20px;
+    top: calc(50% + 20px);
+    font-size: 12.5px;
+    line-height: 18.72px;
+    color: var(--c-text-muted);
+}
+
+.calc__note {
+    position: absolute;
+    left: 20px; right: 20px;
+    top: 402px;
+    font-size: 11.8px;
+    line-height: 17.17px;
+    color: var(--c-text-muted);
+}
+
+/* -------------------------------------------------------- */
+/* RATES (node 1:4032) — 1340 × 496, y=2003 (gap 100)        */
+/* -------------------------------------------------------- */
+.rates {
+    width: 1340px;
+    margin: 100px auto 0;
+    height: 496px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.rates__left {
+    width: 530px;
+    height: 496px;
+    background: var(--c-bg-gray);
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.rates__right {
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.rates__row {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+.rate-card {
+    background: var(--c-bg-gray);
+    border-radius: 20px;
+    padding: 20px;
+    height: 243px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.rate-card--sm { width: 395px; }
+.rate-card--wide { width: 100%; }
+.rate-card__label {
+    font-size: 16px;
+    line-height: 1.4;
+    letter-spacing: 0.01em;
+    color: #727272;
+}
+.rates__left .rate-card__label { line-height: 1.36; } /* left card uses 1.36 per Figma */
+.rate-card__value {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1.04;
+    letter-spacing: -0.02em;
+    color: var(--c-text);
+    white-space: nowrap;
+}
+.rate-card__value--xl {
+    font-size: 80px;
+    letter-spacing: -0.02em;
+    color: #1b1b1b;
+}
+
+/* -------------------------------------------------------- */
+/* LOW-FLAT TAX (node 1:3887) — 1340 × 958, y=2599 (gap 100) */
+/* -------------------------------------------------------- */
+.lowflat {
+    width: 1340px;
+    margin: 100px auto 0;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.lowflat__head {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-right: 32px;
+    color: var(--c-text);
+}
+.lowflat__head h2 {
+    margin: 0;
+    width: 1225px;
+    font-weight: 500;
+    font-size: 80px;
+    line-height: 1.04;
+    letter-spacing: -0.02em;
+    font-feature-settings: "ss02" 1, "ss03" 1;
+}
+.lowflat__head p {
+    width: 1225px;
+    font-size: 20px;
+    line-height: 1.4;
+}
+.lowflat__cards {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+.lowflat__row {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+
+.testimonial {
+    background: var(--c-text);
+    border: 1px solid #fff;
+    border-radius: 20px;
+    padding: 20px;
+    width: 440px;
+    height: 396px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    color: #fff;
+}
+.testimonial__quote {
+    width: 400px;
+    padding-right: 32px;
+    font-size: 20px;
+    line-height: 1.36;
+    color: #fff;
+}
+.testimonial__items {
+    width: 403px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.testimonial__item {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    width: 100%;
+}
+.check {
+    flex: 0 0 auto;
+    width: 20px;
+    height: 20px;
+    border-radius: 200px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.testimonial__item-text {
+    flex: 1;
+    font-size: 20px;
+    line-height: 1.36;
+    color: #fff;
+}
+
+.info-tile {
+    flex: 1;
+    background: var(--c-bg-gray);
+    border: 1px solid #fff;
+    border-radius: 20px;
+    padding: 20px;
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.info-tile__label {
+    font-size: 16px;
+    line-height: 1.4;
+    letter-spacing: 0.01em;
+    color: #727272;
+}
+.info-tile__value {
+    font-weight: 500;
+    font-size: 80px;
+    line-height: 1.04;
+    letter-spacing: -0.02em;
+    color: #1b1b1b;
+    white-space: nowrap;
+}
+
+/* -------------------------------------------------------- */
+/* YEAR IN LIFE (node 1:2534) — 1440 × 1299, y=3657          */
+/* -------------------------------------------------------- */
+.yearlife {
+    position: relative;
+    width: 1440px;
+    height: 1299px;
+    margin-top: 100px;
+    background: var(--c-text);
+    color: #fff;
+    overflow: hidden;
+}
+.yearlife__decor {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+}
+.yearlife__decor::before {
+    /* Big decorative background group 1:2535 — curves + Gemini portrait */
+    content: "PLACEHOLDER · Group 26092528 (background curves + portrait, 2135×1906)";
+    position: absolute;
+    left: 80px;
+    top: 400px;
+    width: 634px;
+    height: 622px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    letter-spacing: .06em;
+    color: rgba(255,255,255,.35);
+    border: 1px dashed rgba(255,255,255,.18);
+    border-radius: 20px;
+}
+.yearlife__title {
+    position: absolute;
+    left: 388px;
+    top: 100px;
+    width: 665px;
+    margin: 0;
+    font-weight: 500;
+    font-size: 56px;
+    line-height: 1.04;
+    letter-spacing: -0.02em;
+    color: #fff;
+    font-feature-settings: "ss02" 1, "ss03" 1;
+}
+.yearlife__card {
+    position: absolute;
+    left: 387px;
+    top: 324px;
+    width: 665px;
+    background: #fff;
+    color: var(--c-text);
+    border-radius: 20px;
+    padding: 40px;
+    filter: drop-shadow(0 4px 4px rgba(0,0,0,.32));
+    display: flex;
+    flex-direction: column;
+}
+.tl {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+    width: 100%;
+}
+.tl__col {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.tl__col--first { padding-top: 12px; }
+.tl__dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 100%;
+    background: #d0d0d0;
+    flex: 0 0 auto;
+}
+.tl__line {
+    width: 1px;
+    background: #d0d0d0;
+}
+.tl__line--top { height: 12px; }
+.tl__line--fill { flex: 1; min-height: 1px; }
+.tl__body {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    gap: 48px;
+    align-items: flex-start;
+    padding-bottom: 40px;
+}
+.tl__body--last { padding-bottom: 0; }
+.tl__time {
+    width: 120px;
+    padding-top: 3px;
+    font-size: 16px;
+    line-height: 1.36;
+    letter-spacing: 0.01em;
+    color: #727272;
+}
+.tl__content {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.tl__title {
+    font-size: 20px;
+    line-height: 1.36;
+    color: var(--c-text);
+}
+.tl__desc {
+    font-size: 16px;
+    line-height: 1.36;
+    letter-spacing: 0.01em;
+    color: #727272;
+}
+
+.warncard {
+    position: absolute;
+    left: 387px;
+    top: 1040px;
+    width: 665px;
+    background: #fff;
+    color: var(--c-text);
+    border-radius: 20px;
+    padding: 20px 20px 20px 40px;
+    filter: drop-shadow(0 4px 4px rgba(0,0,0,.32));
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.warncard__title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.04;
+    color: var(--c-text);
+    font-feature-settings: "ss02" 1, "ss03" 1;
+}
+.warncard__body {
+    width: 585px;
+    font-size: 16px;
+    line-height: 1.36;
+    letter-spacing: 0.01em;
+    color: #727272;
+}
+
+/* -------------------------------------------------------- */
+/* SANCTIONS (node 1:3981) — 1340 × 1087, y=5056 (gap 100)   */
+/* -------------------------------------------------------- */
+.sanctions {
+    width: 1340px;
+    margin: 100px auto 0;
+    display: flex;
+    flex-direction: column;
+    gap: 74px;
+    color: var(--c-text);
+}
+.sanctions__head {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-right: 32px;
+    width: 890px;
+}
+.sanctions__head h2 {
+    margin: 0;
+    font-weight: 500;
+    font-size: 80px;
+    line-height: 1.04;
+    letter-spacing: -0.02em;
+    font-feature-settings: "ss02" 1, "ss03" 1;
+}
+.sanctions__head p {
+    font-size: 20px;
+    line-height: 1.36;
+    white-space: pre-wrap;
+}
+.sanctions__cols {
+    display: flex;
+    gap: 10px;
+}
+.sanctions__col {
+    width: 665px;
+    display: flex;
+    flex-direction: column;
+}
+.sanctions__label {
+    font-size: 32px;
+    line-height: 1.2;
+    color: var(--c-text);
+    margin: 0 0 50px 0;
+}
+.sanctions__card {
+    position: relative;
+    width: 665px;
+    height: 658px;
+    background: var(--c-green-dk);
+    border-radius: 20px;
+    overflow: hidden;
+}
+.sanctions__card-bg {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 24px;
+    font-size: 11px;
+    letter-spacing: .08em;
+    color: rgba(255,255,255,.35);
+    background: linear-gradient(135deg, rgba(255,255,255,.04), rgba(0,0,0,.15));
+}
+.sanctions__inner {
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    color: var(--c-text);
+    border-radius: 20px;
+    padding: 20px 20px 20px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    filter: drop-shadow(0 4px 4px rgba(0,0,0,.32));
+    width: 586px;
+    box-sizing: border-box;
+}
+.sanctions__inner--gap-lg {
+    gap: 59px;
+}
+.sanctions__inner-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.04;
+    color: var(--c-text);
+    font-feature-settings: "ss02" 1, "ss03" 1;
+}
+.sanctions__inner-body {
+    width: 526px;
+    font-size: 20px;
+    line-height: 1.36;
+    letter-spacing: 0.01em;
+    color: var(--c-text);
+    white-space: pre-wrap;
+}
+.sanctions__inner-banks {
+    width: 526px;
+    font-size: 16px;
+    line-height: 1.36;
+    letter-spacing: 0.01em;
+    color: #727272;
+}
+
+/* -------------------------------------------------------- */
+/* SCREEN (node 1:4002) — 1440 × 650, y=6243 (gap 100)       */
+/* -------------------------------------------------------- */
+.screen {
+    width: 1440px;
+    height: 650px;
+    margin-top: 100px;
+    background: #fff;
+    padding: 100px 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.screen__inner {
+    width: 100%;
+    max-width: 665px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    color: var(--c-text);
+}
+.screen__title {
+    margin: 0;
+    font-weight: 500;
+    font-size: 56px;
+    line-height: 1.04;
+    letter-spacing: -0.02em;
+    color: var(--c-text);
+}
+.screen__body {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 20px;
+    line-height: 1.36;
+}
+
+/* -------------------------------------------------------- */
+/* EMPLOYEE (node 10:29) — 1440 × 1248, y=6893, no ext. gap  */
+/* Section brings its own py=100 padding, so it sits flush   */
+/* against Screen. Bottom margin compensates the existing    */
+/* 100px margin-top on Cases to keep total gap 100.          */
+/* -------------------------------------------------------- */
+.employee {
+    width: 1440px;
+    background: #fff;
+    padding: 100px 50px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+    margin-bottom: -100px;
+}
+.employee__head {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-right: 32px;
+    width: 890px;
+    color: var(--c-text);
+}
+.employee__head h2 {
+    margin: 0;
+    width: 907px;
+    font-weight: 500;
+    font-size: 80px;
+    line-height: 1.04;
+    letter-spacing: -0.02em;
+    font-feature-settings: "ss02" 1, "ss03" 1;
+}
+.employee__head p {
+    width: 890px;
+    font-size: 20px;
+    line-height: 1.36;
+}
+.employee__body {
+    position: relative;
+    width: 100%;
+    border-radius: 20px;
+    background: var(--c-text);
+    padding: 100px 387px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    overflow: hidden;
+}
+.employee__body::before {
+    /* PLACEHOLDER — behind #141414 overlay Figma layers two decorative images */
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        radial-gradient(circle at 20% 20%, rgba(255,255,255,.05) 0%, transparent 40%),
+        radial-gradient(circle at 80% 90%, rgba(255,255,255,.04) 0%, transparent 45%),
+        linear-gradient(135deg, rgba(255,255,255,.03), rgba(0,0,0,.20));
+    pointer-events: none;
+}
+.employee__card {
+    position: relative;
+    z-index: 1;
+    width: 665px;
+    background: #fff;
+    color: var(--c-text);
+    border-radius: 20px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    filter: drop-shadow(0 4px 4px rgba(0,0,0,0.32));
+    box-sizing: border-box;
+}
+.chk {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+.chk__box {
+    flex: 0 0 auto;
+    width: 24px;
+    height: 24px;
+    box-sizing: border-box;
+    border: 1.8px solid #a1a7af;
+    background: #fff;
+    border-radius: 4.8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.chk__box--checked {
+    border: 1.2px solid #035a1b;
+    background: #035a1b;
+}
+.chk__text {
+    width: 549px;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    color: var(--c-text);
+    margin: 0;
+    white-space: pre-wrap;
+}
+.employee__note {
+    position: relative;
+    z-index: 1;
+    width: 665px;
+    background: #fff;
+    color: var(--c-text);
+    border-radius: 20px;
+    padding: 20px 20px 20px 40px;
+    display: flex;
+    align-items: center;
+    filter: drop-shadow(0 4px 4px rgba(0,0,0,0.32));
+    box-sizing: border-box;
+}
+.employee__note-text {
+    width: 585px;
+    margin: 0;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.04;
+    color: var(--c-text);
+    font-feature-settings: "ss02" 1, "ss03" 1;
+}
+/* Neutralise Cases' 100px top margin when it follows Employee */
+.employee + .cases {
+    margin-top: 0;
+}
+
+/* -------------------------------------------------------- */
+/* CASES (node 1:3766) — 1340 × 1006, y=6993 (gap 100)       */
+/* -------------------------------------------------------- */
+.cases {
+    width: 1340px;
+    margin: 100px auto 0;
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+    color: var(--c-text);
+}
+.cases__head {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-right: 32px;
+    width: 890px;
+}
+.cases__head h2 {
+    margin: 0;
+    font-weight: 500;
+    font-size: 80px;
+    line-height: 1.04;
+    letter-spacing: -0.02em;
+    font-feature-settings: "ss02" 1, "ss03" 1;
+}
+.cases__head p {
+    width: 890px;
+    font-size: 20px;
+    line-height: 1.4;
+    letter-spacing: 0.01em;
+    white-space: pre-wrap;
+}
+.cases__grid {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+.cases__row {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+.case {
+    flex: 1;
+    min-width: 0;
+    height: 360px;
+    background: var(--c-bg-gray);
+    border: 1px solid #fff;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+.case__header {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    width: 100%;
+}
+.case__icon {
+    flex: 0 0 auto;
+    width: 32px; height: 32px;
+    background: var(--c-text);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 10px;
+    letter-spacing: .05em;
+    overflow: hidden;
+}
+.case__title {
+    width: 358px;
+    padding-bottom: 2px;
+    font-size: 20px;
+    line-height: 1.36;
+    color: var(--c-text);
+    margin: 0;
+}
+.case__body {
+    font-size: 16px;
+    line-height: 1.36;
+    letter-spacing: 0.01em;
+    color: #727272;
+    margin: 0;
+}
+
+/* -------------------------------------------------------- */
+/* FAQ (node 1:3817) — 1340 × 800, y=8099 (gap 100)          */
+/* -------------------------------------------------------- */
+.faq {
+    width: 1340px;
+    margin: 100px auto 0;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    color: var(--c-text);
+}
+.faq__head {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-right: 32px;
+    width: 890px;
+}
+.faq__head h2 {
+    margin: 0;
+    font-weight: 500;
+    font-size: 80px;
+    line-height: 1.04;
+    letter-spacing: -0.02em;
+    font-feature-settings: "ss02" 1;
+}
+.faq__head p {
+    width: 858px;
+    font-size: 20px;
+    line-height: 1.4;
+    color: var(--c-text);
+}
+.faq__head p u,
+.faq__head p .u {
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    text-underline-position: from-font;
+}
+.faq__list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+.faq-item {
+    border-top: 1px solid var(--c-border);
+    padding: 10px 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+}
+.faq-item__q {
+    flex: 1;
+    min-width: 0;
+    min-height: 32px;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    line-height: 1.36;
+    color: var(--c-text);
+}
+.faq-item__answer-block {
+    display: flex;
+    gap: 80px;
+    align-items: flex-start;
+    padding-left: 20px;
+}
+.faq-item__a {
+    width: 533px;
+    font-size: 20px;
+    line-height: 1.36;
+    color: #727272;
+    margin: 0;
+}
+.faq-btn {
+    flex: 0 0 auto;
+    width: 32px;
+    height: 32px;
+    background: var(--c-bg-gray);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--c-text);
+}
+.faq-btn__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 16px;
+}
+.faq-btn__icon--rotated {
+    transform: rotate(45deg);
+}
+
+/* -------------------------------------------------------- */
+/* CTA CARD (node 1:3860) — 1340 × 800, y=8999 (gap 100)     */
+/* -------------------------------------------------------- */
+.ctacard {
+    position: relative;
+    width: 1340px;
+    height: 800px;
+    margin: 100px auto 0;
+    background: red;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.ctacard__bg {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 24px;
+    font-size: 11px;
+    letter-spacing: .08em;
+    color: rgba(255,255,255,.45);
+    background: linear-gradient(135deg, #c8313e, #f66200 55%, #7a1c26);
+}
+.ctacard__inner {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 50px;
+    width: 665px;
+    background: #fff;
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 20px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    filter: drop-shadow(0 4px 4px rgba(0,0,0,0.32));
+    box-sizing: border-box;
+}
+.ctacard__title {
+    margin: 0;
+    padding-right: 32px;
+    font-weight: 500;
+    font-size: 56px;
+    line-height: 1.04;
+    letter-spacing: -0.02em;
+    color: var(--c-text);
+    font-feature-settings: "ss02" 1;
+}
+.ctacard__btn {
+    height: 48px;
+    width: 100%;
+    padding-left: 16px;
+    background: var(--c-green);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    text-decoration: none;
+    font-family: inherit;
+    box-sizing: border-box;
+}
+.ctacard__btn-text {
+    font-size: 16px;
+    line-height: 1.4;
+    letter-spacing: 0.01em;
+}
+.ctacard__btn-arrow {
+    width: 48px;
+    height: 100%;
+    border-left: 1px solid rgba(255,255,255,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* -------------------------------------------------------- */
+/* FOOTER (node 1:3870) — 1440 × 511, y=9899 (gap 100)       */
+/* -------------------------------------------------------- */
+.footer {
+    position: relative;
+    width: 1440px;
+    height: 511px;
+    margin-top: 100px;
+    background: #fff;
+    border-top: 1px solid var(--c-border);
+}
+.footer__brand {
+    position: absolute;
+    left: 100px;   /* 50 (outer main container) + 50 (branding container) */
+    top: 59px;     /* 29 + 30 */
+    width: 328px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+}
+.footer__logo {
+    font-weight: 700;
+    font-size: 64px;
+    letter-spacing: -0.02em;
+    line-height: 1;
+    color: var(--c-text);
+    /* Aspect 359.67 × 96.45 → at w=328, h ≈ 88 */
+    width: 328px;
+}
+.footer__desc {
+    width: 100%;
+    font-size: 16px;
+    line-height: 1.36;
+    letter-spacing: 0.01em;
+    color: var(--c-text);
+}
+.footer__cta {
+    height: 48px;
+    padding-left: 16px;
+    background: var(--c-green);
+    border-radius: 10px;
+    display: inline-flex;
+    align-items: center;
+    gap: 16px;
+    color: #fff;
+    text-decoration: none;
+    font-family: inherit;
+}
+.footer__cta-text {
+    font-size: 16px;
+    line-height: 1.4;
+    letter-spacing: 0.01em;
+}
+.footer__cta-arrow {
+    width: 48px;
+    height: 48px;
+    border-left: 1px solid rgba(255,255,255,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer__disclaimer {
+    position: absolute;
+    left: calc(50% - 664px);
+    top: 305px;
+    width: 1334px;
+    font-size: 14px;
+    line-height: 1.36;
+    letter-spacing: 0.01em;
+    color: #727272;
+    margin: 0;
+}
+.footer__social {
+    position: absolute;
+    left: 56px;
+    top: 442px;
+    width: 1334px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    line-height: 1.4;
+    letter-spacing: 0.01em;
+    color: var(--c-text);
+    white-space: nowrap;
+}
+.footer__copy {
+    opacity: 0.6;
+    margin: 0;
+}
+.footer__links {
+    display: flex;
+    gap: 82px;
+    align-items: center;
+}
+.footer__link {
+    color: var(--c-text);
+    text-decoration: none;
+}
+</style>
+</head>
+<body>
+
+<div class="landing">
+
+    <!-- ============= NAVBAR (node 1:2329) ============= -->
+    <header class="navbar" data-node-id="1:2329">
+        <div class="navbar__logo" data-node-id="1:2330">Kleos</div>
+
+        <nav class="nav" data-node-id="1:2333">
+            <a class="nav__item" href="#calculator" data-node-id="1:2334">Calculator</a>
+            <a class="nav__item" href="#taxes" data-node-id="1:2337">Taxes</a>
+            <a class="nav__item" href="#misclassification" data-node-id="1:2340">Classification</a>
+            <a class="nav__item" href="#faq" data-node-id="1:2343">FAQ</a>
+        </nav>
+
+        <div class="actions" data-node-id="1:2346">
+            <a class="pill" href="#" data-node-id="1:2347">
+                Login
+                <span class="pill__icon">
+                    <!-- login (door + arrow) 16×16 -->
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.5 2h3a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1h-3" stroke="#141414" stroke-width="1.2" stroke-linecap="round"/>
+                        <path d="M2 8h8m0 0L7.5 5.5M10 8 7.5 10.5" stroke="#141414" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </span>
+            </a>
+            <a class="pill" href="#" data-node-id="1:2352">
+                EN
+                <span class="pill__icon">
+                    <!-- globe 16×16 -->
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="8" cy="8" r="6" stroke="#141414" stroke-width="1.2"/>
+                        <path d="M2 8h12M8 2c1.8 2 2.7 4 2.7 6S9.8 12 8 14M8 2c-1.8 2-2.7 4-2.7 6S6.2 12 8 14" stroke="#141414" stroke-width="1.2"/>
+                    </svg>
+                </span>
+            </a>
+            <a class="pill pill--cta" href="#" data-node-id="1:2357">
+                Book a demo
+                <span class="pill__icon">
+                    <!-- arrow-right 16×16 -->
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 8h10m0 0L9 4m4 4-4 4" stroke="#fff" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </span>
+            </a>
+        </div>
+    </header>
+
+    <!-- ============= HERO (node 1:2362) ============= -->
+    <section class="hero" id="top" data-node-id="1:2362">
+        <div class="hero__text" data-node-id="1:2363">
+            <div data-node-id="1:2364">
+                <div class="hero__trust" data-node-id="1:2365">
+                    <span class="hero__trust-flag" data-node-id="1:2366" aria-label="Georgia flag">
+                        <!-- simplified Georgia flag placeholder -->
+                        <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="32" height="32" fill="#ffffff"/>
+                            <rect x="13" width="6" height="32" fill="#ff0000"/>
+                            <rect y="13" width="32" height="6" fill="#ff0000"/>
+                            <path d="M5 4h2v2h2v2H7v2H5V8H3V6h2V4z" fill="#ff0000"/>
+                            <path d="M25 4h2v2h2v2h-2v2h-2V8h-2V6h2V4z" fill="#ff0000"/>
+                            <path d="M5 22h2v2h2v2H7v2H5v-2H3v-2h2v-2z" fill="#ff0000"/>
+                            <path d="M25 22h2v2h2v2h-2v2h-2v-2h-2v-2h2v-2z" fill="#ff0000"/>
+                        </svg>
+                    </span>
+                    <span data-node-id="1:2377">Georgia · Contractor taxation guide · 2026</span>
+                </div>
+                <h1 class="hero__title" data-node-id="1:2378">
+                    Hiring in <span class="accent">Georgia?</span><br>
+                    Here&rsquo;s where<br>
+                    the money actually<br>
+                    goes
+                </h1>
+            </div>
+            <div data-node-id="1:2379">
+                <p class="hero__subtext" data-node-id="1:2380">
+                    Start with the calculator: enter what you pay and see what reaches your contractor under each of the three setups. Below it &mdash; what to check before you agree a rate, and what it costs if the arrangement reads as employment.
+                </p>
+                <div class="hero__buttons" data-node-id="1:2381">
+                    <a class="btn btn--primary" href="#" data-node-id="1:2382">
+                        Run the numbers
+                        <span class="btn__arrow">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3 8h10m0 0L9 4m4 4-4 4" stroke="#fff" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <div class="input__hint">
+                General information, not tax or legal advice. Georgia brought in its first mandatory work-permit regime on 1&nbsp;March 2026 and cut it back six weeks later, and the list of activities barred from the 1% regime is older than most articles written about it. Treat every number here as a starting point and check the activity on your own contract.
+            </div>
+        </div>
+
+        <div class="hero__image" data-node-id="1:2392">
+            [ Screenshot 2026-04-01 at 10.42.22 — 665×636 ]
+        </div>
+    </section>
+
+    <!-- ============= MAIN CONTAINER — dark (node 1:2408) ============= -->
+    <section class="dark" id="calculator" data-node-id="1:2408">
+        <div class="dark__grain" data-node-id="1:2409" aria-hidden="true"></div>
+        <div class="dark__decor" aria-hidden="true"></div>
+
+        <div class="dark__title" data-node-id="1:2424">
+            <h2 data-node-id="1:2425">
+                Enter what you pay.<br>
+                See what actually lands
+            </h2>
+            <p data-node-id="1:2426">
+                Two Georgian contractors can quote you the same rate and keep very different amounts of it. Usually they did not choose which &mdash; the activity on their registration did.
+            </p>
+        </div>
+
+        <div class="calc" data-node-id="1:2427">
+
+            <!-- Tabs -->
+            <div class="calc__tabs" data-node-id="1:2511">
+                <div class="calc__tabs-inner" data-node-id="1:2512">
+                    <div class="calc__tab calc__tab--active" data-node-id="1:2519">
+                        <p class="calc__tab-title">Entrepreneur, Small Business Status</p>
+                        <p class="calc__tab-sub">1% of turnover &middot; 3% above ~$192k</p>
+                    </div>
+                    <div class="calc__tab" data-node-id="1:2524">
+                        <p class="calc__tab-title">Entrepreneur, standard regime</p>
+                        <p class="calc__tab-sub">20% of profit &middot; forced for consulting</p>
+                    </div>
+                    <div class="calc__tab" data-node-id="1:2529">
+                        <p class="calc__tab-title">Unregistered individual</p>
+                        <p class="calc__tab-sub">20% self-declared &middot; nothing withheld by you</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Left card: input -->
+            <div class="calc__card calc__card--left" data-node-id="1:2428">
+                <div class="seg" data-node-id="1:2447">
+                    <div class="seg__btn" data-node-id="1:2448">I know the invoice</div>
+                    <div class="seg__label" data-node-id="1:2450">I want a target net</div>
+                </div>
+                <div class="input" data-node-id="1:2429">
+                    <div class="input__label" data-node-id="1:2431">Annual invoice to the contractor (USD)</div>
+                    <div class="input__field-wrap" data-node-id="1:2434">
+                        <div class="input__field" data-node-id="1:2436">
+                            <span data-node-id="1:2441">$36,000.00</span>
+                        </div>
+                        <div class="input__hint" data-node-id="1:2446"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right card: breakdown -->
+            <div class="calc__card calc__card--right" data-node-id="1:2451">
+                <div class="bar" data-node-id="1:2453">
+                    <div class="bar__track" data-node-id="1:2454">
+                        <div class="bar__seg-green" data-node-id="1:2455"></div>
+                        <div class="bar__seg-orange" data-node-id="1:2456"></div>
+                    </div>
+                    <div class="legend" data-node-id="1:2457">
+                        <div class="legend__item"><span class="legend__dot" style="background:#009423"></span>Net in pocket</div>
+                        <div class="legend__item"><span class="legend__dot" style="background:#f66200"></span>Tax</div>
+                    </div>
+                </div>
+
+                <div class="rows" data-node-id="1:2473">
+                    <div class="row" data-node-id="1:2476">
+                        <span class="row__label">Amount invoiced</span>
+                        <span class="row__value">$36,000.00</span>
+                    </div>
+                    <div class="rows__sep"></div>
+                    <div class="row" data-node-id="1:2481">
+                        <span class="row__label">Small Business tax (1% of turnover)</span>
+                        <span class="row__value">&ndash; $360.00</span>
+                    </div>
+                    <div class="rows__sep"></div>
+                    <div class="row" data-node-id="1:2498">
+                        <span class="row__label">&nbsp;</span>
+                        <span class="row__value">&nbsp;</span>
+                    </div>
+                    <div class="rows__sep"></div>
+                    <div class="row" data-node-id="1:2498b">
+                        <span class="row__label">&nbsp;</span>
+                        <span class="row__value">&nbsp;</span>
+                    </div>
+                    <div class="rows__sep"></div>
+                    <div class="row" data-node-id="1:2503">
+                        <span class="row__label">Net in pocket / year</span>
+                        <span class="row__value row__value--total">$35,640.00</span>
+                    </div>
+                </div>
+
+                <div class="summary" data-node-id="1:2506">
+                    <div class="summary__net" data-node-id="1:2507">$2,970</div>
+                    <div class="summary__label" data-node-id="1:2510">net per month</div>
+                    <div class="summary__rate" data-node-id="1:2508">1.0%</div>
+                    <div class="summary__rate-label" data-node-id="1:2509">effective rate</div>
+                </div>
+
+                <div class="calc__note" data-node-id="1:2452">
+                    Nothing comes out of your side: Georgia has no social-insurance and no mandatory medical contribution.
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ============= LOW-FLAT TAX (node 1:3887) ============= -->
+    <section class="lowflat" id="taxes" data-node-id="1:3887">
+        <div class="lowflat__head" data-node-id="1:3888">
+            <h2 data-node-id="1:3889">Three things. Here&rsquo;s what each one costs</h2>
+            <p data-node-id="1:3890">
+                Georgia taxes a registered contractor on turnover rather than profit when they hold Small Business Status, and there are no contributions on either side. Which regime they are in is decided by the activity on their registration, and one whole professional category is shut out of it.
+            </p>
+        </div>
+
+        <div class="lowflat__cards" data-node-id="1:3891">
+            <div class="lowflat__row" data-node-id="1:3892">
+                <!-- Testimonial 1 — turnover tax -->
+                <div class="testimonial" data-node-id="1:3893">
+                    <div class="testimonial__quote" data-node-id="1:3895">
+                        With Small Business Status it is 1% of everything invoiced, with no deduction for costs. Without the status it is 20% of net profit, where costs do come off. There is no middle band.
+                    </div>
+                    <div class="testimonial__items" data-node-id="1:3896">
+                        <div class="testimonial__item">
+                            <span class="check">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.5 8.5 6.5 11.5 12.5 5" stroke="#141414" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                            <div class="testimonial__item-text">Small Business Status &ndash; 1% of turnover</div>
+                        </div>
+                        <div class="testimonial__item">
+                            <span class="check">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.5 8.5 6.5 11.5 12.5 5" stroke="#141414" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                            <div class="testimonial__item-text">Above ~$192,000 &ndash; 3% on the excess</div>
+                        </div>
+                        <div class="testimonial__item">
+                            <span class="check">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.5 8.5 6.5 11.5 12.5 5" stroke="#141414" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                            <div class="testimonial__item-text">Standard regime &ndash; 20% of profit</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 — contributions -->
+                <div class="testimonial" data-node-id="1:3918">
+                    <div class="testimonial__quote" data-node-id="1:3920">
+                        Georgia has no general social-insurance system, no mandatory medical contribution and no unemployment levy. The funded pension binds employees only, so nothing is charged to you and almost nothing to them.
+                    </div>
+                    <div class="testimonial__items" data-node-id="1:3921">
+                        <div class="testimonial__item">
+                            <span class="check">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.5 8.5 6.5 11.5 12.5 5" stroke="#141414" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                            <div class="testimonial__item-text">Your side &ndash; 0%</div>
+                        </div>
+                        <div class="testimonial__item">
+                            <span class="check">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.5 8.5 6.5 11.5 12.5 5" stroke="#141414" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                            <div class="testimonial__item-text">Employees &ndash; 2% + 2%, plus a state top-up</div>
+                        </div>
+                        <div class="testimonial__item">
+                            <span class="check">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.5 8.5 6.5 11.5 12.5 5" stroke="#141414" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                            <div class="testimonial__item-text">Self-employed &ndash; voluntary, 4%</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 — the activity -->
+                <div class="testimonial" data-node-id="1:3943">
+                    <div class="testimonial__quote" data-node-id="1:3945">
+                        Resolution 415 lists what cannot hold Small Business Status, and the list is short, old and categorical. Consulting of any kind is on it. Software development, design, marketing and translation are not, and they qualify.
+                    </div>
+                    <div class="testimonial__items" data-node-id="1:3946">
+                        <div class="testimonial__item">
+                            <span class="check">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.5 8.5 6.5 11.5 12.5 5" stroke="#141414" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                            <div class="testimonial__item-text">IT, design, marketing &ndash; eligible</div>
+                        </div>
+                        <div class="testimonial__item">
+                            <span class="check">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.5 8.5 6.5 11.5 12.5 5" stroke="#141414" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                            <div class="testimonial__item-text">Consulting of any kind &ndash; barred</div>
+                        </div>
+                        <div class="testimonial__item">
+                            <span class="check">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.5 8.5 6.5 11.5 12.5 5" stroke="#141414" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                            <div class="testimonial__item-text">Wrong activity found &ndash; ~$190 fine</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============= YEAR IN LIFE (node 1:2534) ============= -->
+    <section class="yearlife" id="deadlines" data-node-id="1:2534">
+        <div class="yearlife__decor" aria-hidden="true" data-node-id="1:2535"></div>
+
+        <h2 class="yearlife__title" data-node-id="1:3715">A year in the life of a Georgian contractor&rsquo;s taxes</h2>
+
+        <div class="yearlife__card" data-node-id="1:3717">
+
+            <div class="tl" data-node-id="1:3719">
+                <div class="tl__col tl__col--first">
+                    <div class="tl__dot"></div>
+                    <div class="tl__line tl__line--fill"></div>
+                </div>
+                <div class="tl__body" data-node-id="1:3723">
+                    <div class="tl__time" data-node-id="1:3725">Before the<br>first invoice</div>
+                    <div class="tl__content" data-node-id="1:3726">
+                        <p class="tl__title" data-node-id="1:3727">The status has to be granted first</p>
+                        <p class="tl__desc" data-node-id="1:3728">Small Business Status is a separate application after registration, and the 1% rate runs from the first day of the month after it is granted. An invoice paid before that is taxed at 20%.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tl" data-node-id="1:3729">
+                <div class="tl__col">
+                    <div class="tl__line tl__line--top"></div>
+                    <div class="tl__dot"></div>
+                    <div class="tl__line tl__line--fill"></div>
+                </div>
+                <div class="tl__body" data-node-id="1:3734">
+                    <div class="tl__time" data-node-id="1:3736">Monthly,<br>by the 15th</div>
+                    <div class="tl__content" data-node-id="1:3737">
+                        <p class="tl__title" data-node-id="1:3738">Declare and pay, every month</p>
+                        <p class="tl__desc" data-node-id="1:3739">A turnover declaration and payment through rs.ge by the 15th of the following month, including months with no income. A nil return is still a return, and payment has to come from a Georgian bank account.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tl" data-node-id="1:3740">
+                <div class="tl__col">
+                    <div class="tl__line tl__line--top"></div>
+                    <div class="tl__dot"></div>
+                    <div class="tl__line tl__line--fill"></div>
+                </div>
+                <div class="tl__body" data-node-id="1:3745">
+                    <div class="tl__time" data-node-id="1:3747">Watch<br>continuously</div>
+                    <div class="tl__content" data-node-id="1:3748">
+                        <p class="tl__title" data-node-id="1:3749">The $192,000 line</p>
+                        <p class="tl__desc" data-node-id="1:3750">Cross it and the excess is taxed at 3% from that month to 31 December. The status survives the year.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tl" data-node-id="1:3751">
+                <div class="tl__col">
+                    <div class="tl__line tl__line--top"></div>
+                    <div class="tl__dot"></div>
+                </div>
+                <div class="tl__body tl__body--last" data-node-id="1:3755">
+                    <div class="tl__time" data-node-id="1:3757">Two years<br>running</div>
+                    <div class="tl__content" data-node-id="1:3758">
+                        <p class="tl__title" data-node-id="1:3759">The status is revoked</p>
+                        <p class="tl__desc" data-node-id="1:3760">Cross that line in two consecutive calendar years and the status ends automatically on 1 January of the third. Then it is 20% of profit. One breach is survivable. Two is not.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="warncard" data-node-id="1:3761">
+            <div class="warncard__title" data-node-id="1:3763">Before you sign</div>
+            <div class="warncard__body" data-node-id="1:3764">
+                Deadlines are the contractor&rsquo;s problem, but misclassification is yours. If the arrangement reads as employment, their 1% becomes 20%, that reaches you as a rate request, and labour claims sit behind it. Most of what decides it is in your contract, not their filings. The ten signals are just below.
+            </div>
+        </div>
+    </section>
+
+    <!-- ============= EMPLOYEE (node 10:29) ============= -->
+    <section class="employee" id="misclassification" data-node-id="10:29">
+        <div class="employee__head" data-node-id="10:30">
+            <h2 data-node-id="10:31">Are you working with<br>them legally?</h2>
+            <p data-node-id="10:32">Tick what&rsquo;s true of your arrangement. Unusually, Georgia&rsquo;s tax authority publishes its own questionnaire for this and treats it as the basis for classification. The criteria are administrative rather than statutory, but they decide audits in practice. These are the things they weigh.</p>
+        </div>
+
+        <div class="employee__body" data-node-id="10:33">
+
+            <div class="employee__card" data-node-id="10:35">
+
+                <!-- Checked item -->
+                <div class="chk" data-node-id="10:36">
+                    <span class="chk__box chk__box--checked" data-node-id="10:37" aria-hidden="true">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.5 8.5 6.5 11.5 12.5 5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </span>
+                    <p class="chk__text" data-node-id="10:40">You set their working hours, or their time off needs your approval</p>
+                </div>
+
+                <div class="chk" data-node-id="10:42">
+                    <span class="chk__box" data-node-id="10:43" aria-hidden="true"></span>
+                    <p class="chk__text" data-node-id="10:45">Your contract puts them under your internal rules, or uses employment words like position, salary and paid leave</p>
+                </div>
+
+                <div class="chk" data-node-id="10:47">
+                    <span class="chk__box" data-node-id="10:48" aria-hidden="true"></span>
+                    <p class="chk__text" data-node-id="10:50">You pay a fixed monthly sum rather than against invoices</p>
+                </div>
+
+                <div class="chk" data-node-id="10:52">
+                    <span class="chk__box" data-node-id="10:53" aria-hidden="true"></span>
+                    <p class="chk__text" data-node-id="10:55">You direct how the work is done, not just what is delivered</p>
+                </div>
+
+                <div class="chk" data-node-id="10:57">
+                    <span class="chk__box" data-node-id="10:58" aria-hidden="true"></span>
+                    <p class="chk__text" data-node-id="10:60">You supply or fund the tools they work with</p>
+                </div>
+
+                <div class="chk" data-node-id="10:62">
+                    <span class="chk__box" data-node-id="10:63" aria-hidden="true"></span>
+                    <p class="chk__text" data-node-id="10:65">There are no acceptance documents or defined deliverables behind the payments</p>
+                </div>
+
+                <div class="chk">
+                    <span class="chk__box" aria-hidden="true"></span>
+                    <p class="chk__text">Your contract doesn&rsquo;t let them subcontract the work on their own responsibility</p>
+                </div>
+
+                <div class="chk">
+                    <span class="chk__box" aria-hidden="true"></span>
+                    <p class="chk__text">They sit inside your structure &mdash; a manager, reviews, team rituals</p>
+                </div>
+
+                <div class="chk">
+                    <span class="chk__box" aria-hidden="true"></span>
+                    <p class="chk__text">Your contract prevents other clients, or you are effectively their only client</p>
+                </div>
+
+                <div class="chk">
+                    <span class="chk__box" aria-hidden="true"></span>
+                    <p class="chk__text">You pay the same whether or not the result is accepted, so they carry no risk on the work</p>
+                </div>
+            </div>
+
+            <div class="employee__note" data-node-id="10:67">
+                <p class="employee__note-text" data-node-id="10:69">Reclassification here is a tax event, and it lands on your contractor: salary income cannot be taxed at 1%, so the same money moves to 20% of gross. Your side of it is a rate conversation you did not plan for.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ============= CASES (node 1:3766) ============= -->
+    <section class="cases" id="what-to-ask" data-node-id="1:3766">
+        <div class="cases__head" data-node-id="1:3767">
+            <h2 data-node-id="1:3768">Four things to check<br>before you agree a rate</h2>
+            <p data-node-id="1:3769">Which status they hold, what activity it rests on, whether the paperwork actually protects them, and whether they need permission to work at all. All four change the number that matters to them.</p>
+        </div>
+
+        <div class="cases__grid" data-node-id="1:3770">
+
+            <div class="cases__row" data-node-id="1:3771">
+                <div class="case" data-node-id="1:3772">
+                    <div class="case__header" data-node-id="1:3773">
+                        <span class="case__icon" data-node-id="1:3774" aria-hidden="true">ic1</span>
+                        <p class="case__title" data-node-id="1:3777">Which status, and whether it&rsquo;s live</p>
+                    </div>
+                    <p class="case__body" data-node-id="1:3778">Ask for the individual entrepreneur registration certificate and, separately, the Small Business Status confirmation with its effective date. They are two different documents from two different bodies, and people conflate them. The registration says they can trade. Only the status confirmation says they are on 1%.</p>
+                </div>
+                <div class="case" data-node-id="1:3794">
+                    <div class="case__header" data-node-id="1:3795">
+                        <span class="case__icon" data-node-id="1:3796" aria-hidden="true">ic4</span>
+                        <p class="case__title" data-node-id="1:3800">The activity on the certificate</p>
+                    </div>
+                    <p class="case__body" data-node-id="1:3801">Consulting of any kind is barred from the 1% regime under Resolution 415 &mdash; management, business, strategy, tax. So are legal, notarial, medical, architectural, audit and personnel supply. Software development, design and marketing are not. Read the activity as registered rather than the job title. If your engagement letter says consulting and their certificate says something else, one of them is wrong.</p>
+                </div>
+            </div>
+
+            <div class="cases__row" data-node-id="1:3771b">
+                <div class="case" data-node-id="1:3802">
+                    <div class="case__header" data-node-id="1:3803">
+                        <span class="case__icon" data-node-id="1:3804" aria-hidden="true">ic5</span>
+                        <p class="case__title" data-node-id="1:3808">A certificate is not a guarantee</p>
+                    </div>
+                    <p class="case__body" data-node-id="1:3809">Georgian practitioners are blunt about this: a Small Business, Virtual Zone or International Company certificate does not bind the tax authority. Getting the status is easier than qualifying for it, and the Service can look behind the paper years later. If your contractor invoices through a Virtual Zone company on 0%, the same caveat applies with more force.</p>
+                </div>
+                <div class="case" data-node-id="1:3810">
+                    <div class="case__header" data-node-id="1:3811">
+                        <span class="case__icon" data-node-id="1:3812" aria-hidden="true">ic1</span>
+                        <p class="case__title" data-node-id="1:3814">Whether they need permission to work</p>
+                    </div>
+                    <p class="case__body" data-node-id="1:3815">The work-permit regime that arrived on 1 March 2026 was cut back on 16 April: a foreign national serving a non-resident client whose business sits outside Georgia is exempt, which covers an engagement like yours. It still reaches someone selling into the Georgian market locally, and the fine of about $770 falls on them. Georgian nationals are outside it entirely. The detail is still being codified, so ask which basis they are on rather than assuming.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ============= FAQ (node 1:3817) ============= -->
+    <section class="faq" id="faq" data-node-id="1:3817">
+        <div class="faq__head" data-node-id="1:3818">
+            <h2 data-node-id="1:3819">The questions</h2>
+            <p data-node-id="1:3820">The nine that come up most when companies hire in Georgia.</p>
+        </div>
+
+        <div class="faq__list" data-node-id="1:3821">
+
+            <!-- Item 1 — expanded -->
+            <div class="faq-item" data-node-id="1:3822">
+                <div class="faq-item__q" data-node-id="1:3823">Can we hire a Georgian contractor without a Georgian entity?</div>
+                <div class="faq-item__answer-block" data-node-id="1:3824">
+                    <p class="faq-item__a" data-node-id="1:3825">Yes. A commercial agreement with a registered individual entrepreneur needs nothing from you locally: no registration, no filing, no presence. You do not even withhold, as long as you have no permanent establishment in Georgia, so the whole invoice leaves your account. What you cannot do is run that arrangement like employment.</p>
+                    <div class="faq-btn" data-node-id="1:3826" aria-label="Collapse">
+                        <span class="faq-btn__icon faq-btn__icon--rotated">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 2v12M2 8h12" stroke="#141414" stroke-width="1.4" stroke-linecap="round"/>
+                        </svg>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="faq-item" data-node-id="1:3830">
+                <div class="faq-item__q" data-node-id="1:3831">Who actually pays the tax, us or the contractor?</div>
+                <div class="faq-item__answer-block">
+                    <p class="faq-item__a">The contractor, entirely. They declare and pay under whichever of the three setups they are on. A Georgian company or entrepreneur paying an unregistered individual for services would have to withhold 20% at source; paying a registered entrepreneur it withholds nothing, and as a foreign payer without a permanent establishment you withhold nothing either way. Nothing is settled in advance, so their whole bill arrives later, on their side. Worth knowing before the first rate conversation.</p>
+                    <div class="faq-btn" data-node-id="1:3832" aria-label="Collapse">
+                        <span class="faq-btn__icon faq-btn__icon--rotated">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8 2v12M2 8h12" stroke="#141414" stroke-width="1.4" stroke-linecap="round"/>
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Item 3 -->
+            <div class="faq-item" data-node-id="1:3836">
+                <div class="faq-item__q" data-node-id="1:3837">Our contractor is a registered individual entrepreneur. Is that enough?</div>
+                <div class="faq-item__answer-block">
+                    <p class="faq-item__a">It is their half, and it counts. Two questions stay open. Whether the activity on their registration actually permits the regime they are filing under. Consulting of any kind is barred from the 1% rate, and a good deal of work gets described as consulting. And whether the relationship reads as employment, which is mostly your decisions rather than their filings. A properly registered entrepreneur on a contract that reads as employment is still a reclassification case.</p>
+                    <div class="faq-btn" data-node-id="1:3838" aria-label="Collapse">
+                        <span class="faq-btn__icon faq-btn__icon--rotated">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8 2v12M2 8h12" stroke="#141414" stroke-width="1.4" stroke-linecap="round"/>
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Item 4 -->
+            <div class="faq-item" data-node-id="1:3839">
+                <div class="faq-item__q" data-node-id="1:3840">Does our contractor need permission to work in Georgia?</div>
+                <div class="faq-item__answer-block">
+                    <p class="faq-item__a">Probably not, and this is where most coverage is out of date. Georgia introduced its first work-permit regime on 1&nbsp;March 2026, then amended it on 16&nbsp;April: someone providing services to a non-resident client whose business is conducted outside Georgia is exempt, which is exactly this arrangement. Authorisation plus a residence permit or a D1 visa is still needed by a contractor selling into the Georgian market itself, and the fine for working without it is about $770. Georgian nationals sit outside all of it. The detail is still being codified, so ask which basis they are on.</p>
+                    <div class="faq-btn" data-node-id="1:3841" aria-label="Collapse">
+                        <span class="faq-btn__icon faq-btn__icon--rotated">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8 2v12M2 8h12" stroke="#141414" stroke-width="1.4" stroke-linecap="round"/>
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 5 -->
+            <div class="faq-item" data-node-id="1:3842">
+                <div class="faq-item__q" data-node-id="1:3843">What is this 1% our developer keeps mentioning?</div>
+                <div class="faq-item__answer-block">
+                    <p class="faq-item__a">Small Business Status, under articles 88 to 90 of the Tax Code. A registered individual entrepreneur pays 1% of gross turnover instead of 20% of profit, up to about $192,000 a year, with 3% on the excess. It is a separate application after registration and runs only from the first of the following month. Software development, design and marketing qualify; consulting does not, and nor do legal, medical, architectural, audit and personnel-supply work. Ask which activity is on the certificate.</p>
+                    <div class="faq-btn" data-node-id="1:3844" aria-label="Collapse">
+                        <span class="faq-btn__icon faq-btn__icon--rotated">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8 2v12M2 8h12" stroke="#141414" stroke-width="1.4" stroke-linecap="round"/>
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Item 6 -->
+            <div class="faq-item" data-node-id="1:3848">
+                <div class="faq-item__q" data-node-id="1:3849">How do we actually get money to them?</div>
+                <div class="faq-item__answer-block">
+                    <p class="faq-item__a">Most Georgian contractors invoice in dollars or euros to a Georgian bank account, usually TBC or Bank of Georgia, and SWIFT is the normal rail. There is a wrinkle worth agreeing up front: Small Business Status tax has to be paid from a Georgian account, and the monthly rs.ge portal login needs a Georgian phone number. A contractor who has left the country and kept the status can find the compliance harder than the tax. Or Kleos becomes the Contractor of Record, and that stops being a negotiation.</p>
+                    <div class="faq-btn" data-node-id="1:3850" aria-label="Collapse">
+                        <span class="faq-btn__icon faq-btn__icon--rotated">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8 2v12M2 8h12" stroke="#141414" stroke-width="1.4" stroke-linecap="round"/>
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Item 7 -->
+            <div class="faq-item">
+                <div class="faq-item__q">Does it matter that we&rsquo;re a foreign client and pay from abroad?</div>
+                <div class="faq-item__answer-block">
+                    <p class="faq-item__a">Not for their tax. Georgia taxes services physically performed in Georgia as Georgian-source income, and article 104 says the place of payment is irrelevant. A developer in Tbilisi invoicing a company in San Francisco and paid into a foreign account is earning Georgian income. Client location, currency and bank all drop out. Paying someone in Georgia does not on its own give you a taxable presence there, but a person habitually concluding business on your behalf, or a fixed place of business you effectively control, can. That is a corporate tax question, separate from classification.</p>
+                    <div class="faq-btn" aria-label="Collapse">
+                        <span class="faq-btn__icon faq-btn__icon--rotated">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8 2v12M2 8h12" stroke="#141414" stroke-width="1.4" stroke-linecap="round"/>
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Item 8 -->
+            <div class="faq-item">
+                <div class="faq-item__q">What happens if the arrangement is reclassified as employment?</div>
+                <div class="faq-item__answer-block">
+                    <p class="faq-item__a">Less to you than you might expect, and more to them. Salary income cannot be taxed at 1%, so reclassification moves the money from 1% of turnover to 20% of gross, with interest, a fine of about $190, loss of the status, and no reapplication until the following tax year. Your side is second-order: a rate renegotiation, labour claims if Georgian labour law is engaged, and a separate permanent-establishment question. There is no employment-contract register in Georgia, so this usually surfaces through a tax audit of your contractor rather than a labour inspection of you.</p>
+                    <div class="faq-btn" aria-label="Collapse">
+                        <span class="faq-btn__icon faq-btn__icon--rotated">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8 2v12M2 8h12" stroke="#141414" stroke-width="1.4" stroke-linecap="round"/>
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Item 9 -->
+            <div class="faq-item" data-node-id="1:3854">
+                <div class="faq-item__q" data-node-id="1:3855">Can we hire employees in Georgia, or use an Employer of Record?</div>
+                <div class="faq-item__answer-block">
+                    <p class="faq-item__a">Not directly, since the employer has to be a Georgian entity or a registered Employer of Record. The employment side is light: 20% income tax withheld, 2% employer pension, 24 working days of paid leave, and a statutory minimum wage of about $8 a month that functions as nothing. What is not light is dismissal: Georgia lists its termination grounds exhaustively, and exiting an employment relationship costs either 30 days&rsquo; notice with a month&rsquo;s severance or 3 days&rsquo; notice with two months&rsquo;. Or Kleos becomes that Employer of Record, with the payroll in lari and the filings on our side.</p>
+                    <div class="faq-btn" data-node-id="1:3856" aria-label="Collapse">
+                        <span class="faq-btn__icon faq-btn__icon--rotated">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8 2v12M2 8h12" stroke="#141414" stroke-width="1.4" stroke-linecap="round"/>
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- ============= CTA CARD (node 1:3860) ============= -->
+    <section class="ctacard" id="demo" data-node-id="1:3860">
+        <div class="ctacard__bg" data-node-id="1:3861" aria-hidden="true">
+            PLACEHOLDER · сделай-более-реалистичное-фото-текстуру-кожи 1 (1708×1146 background art, rotated)
+        </div>
+        <div class="ctacard__inner" data-node-id="1:3862">
+            <div data-node-id="1:3863">
+                <p class="ctacard__title" data-node-id="1:3864">Georgia rewrote the work rules in 2026. Sure your contractor still qualifies?</p>
+            </div>
+            <a class="ctacard__btn" href="#" data-node-id="1:3865">
+                <span class="ctacard__btn-text" data-node-id="1:3867">Check your setup</span>
+                <span class="ctacard__btn-arrow" data-node-id="1:3868">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 8h10m0 0L9 4m4 4-4 4" stroke="#fff" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </span>
+            </a>
+        </div>
+    </section>
+
+    <!-- ============= FOOTER (node 1:3870) ============= -->
+    <footer class="footer" data-node-id="1:3870">
+        <div class="footer__brand" data-node-id="1:3874">
+            <div class="footer__logo" data-node-id="1:3875">Kleos</div>
+            <p class="footer__desc" data-node-id="1:3876">Global contractor payroll. Stop doing payroll. Pay one person first. See what vanishes.</p>
+            <a class="footer__cta" href="#" data-node-id="1:3877">
+                <span class="footer__cta-text" data-node-id="1:3879">Book a demo</span>
+                <span class="footer__cta-arrow" data-node-id="1:3880">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 8h10m0 0L9 4m4 4-4 4" stroke="#fff" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </span>
+            </a>
+        </div>
+
+        <p class="footer__disclaimer" data-node-id="1:3872">General information only, not tax, legal or accounting advice. Figures reflect 2026 rules and the assumptions beside each calculation. Small Business Status charges 1% of turnover up to GEL&nbsp;500,000 a year under articles 88&ndash;90 of the Tax Code of Georgia, 3% on the excess, and is revoked from 1&nbsp;January of the third year if the ceiling is crossed twice. Government Resolution No.&nbsp;415 of 2010 bars consulting of any kind, plus medical, architectural, legal, notarial, auditing and personnel-supply work. Micro Business Status is 0% up to GEL&nbsp;30,000. The standard rate is 20%. Georgia has no social-insurance or mandatory medical contribution; the funded pension binds employees and is voluntary for the self-employed. The private-sector minimum wage is GEL&nbsp;20 a month, unchanged since 1999. The right-to-work regime took effect on 1&nbsp;March 2026 under Resolution No.&nbsp;70; amendments of 16&nbsp;April 2026 exempt services provided for a non-resident whose business is conducted outside Georgia, and further scope is still to be set by ordinance. The Revenue Service questionnaire is administrative, not statutory, so any score here is an indication only. Amounts are in US dollars, converted at an indicative 2.60&nbsp;GEL/$; the lari floats, so check the current rate. Confirm your position at rs.ge or with a qualified Georgian adviser.</p>
+
+        <div class="footer__social" data-node-id="1:3882">
+            <p class="footer__copy" data-node-id="1:3883">2026 Kleos</p>
+            <div class="footer__links" data-node-id="1:3884">
+                <a class="footer__link" href="#" data-node-id="1:3886">Facebook</a>
+                <a class="footer__link" href="#" data-node-id="1:3885">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+</div>
+
+
+<!-- =========================================================
+     Interactive layer. Added for the Streamlit preview only.
+     Does not touch the <style> block or any existing markup.
+     All rates are constants at the top so they can be updated
+     in one place. See README.md for what is verified and what
+     is a stated assumption.
+     ========================================================= -->
+<script id="kleos-calc">
+(function () {
+  "use strict";
+
+  // ---- constants: update these, nothing else -------------------------
+  // Displayed in US dollars. Every threshold below is a statutory figure in
+  // lari, converted for display only, so the lari value is the one that binds.
+  // Rate: mid-market 18 August 2026 (0.38439 USD per GEL). The National Bank
+  // official rate was 0.3813 on 6 August 2026, i.e. 2.62. Update in one place.
+  var GEL_PER_USD   = 2.60;
+
+  // Small Business Status. Tax Code arts. 88-90; Gov. Resolution 415.
+  var SBS_RATE      = 0.01;           // of gross turnover, no cost deduction
+  var SBS_EXCESS    = 0.03;           // on turnover above the ceiling
+  var SBS_CEIL_GEL  = 500000;         // GEL per calendar year
+
+  // Micro Business Status, not modelled: the ceiling is below any
+  // engagement this page is written for. Shown as a note instead.
+  var MICRO_CEIL_GEL = 30000;         // GEL per calendar year
+
+  // Standard regime and unregistered individuals.
+  var PIT           = 0.20;           // 20% flat
+
+  // Funded pension. Mandatory for employees only; voluntary for the
+  // self-employed, so it is never added to a contractor's bill here.
+  var PENS_SELF     = 0.04;
+
+  // Penalty for carrying on a prohibited activity under the status.
+  var FINE_ACTIVITY_GEL = 500;        // GEL
+
+  var usd = function (gel) { return gel / GEL_PER_USD; };
+  var SBS_CEIL = usd(SBS_CEIL_GEL);   // ~$192,300
+
+  // ---- state --------------------------------------------------------
+  var state = {
+    tab: 0,                 // 0 small business, 1 standard IE, 2 unregistered
+    mode: "invoice",        // "invoice" | "net"
+    amount: 36000           // USD
+  };
+
+  // ---- formatting ---------------------------------------------------
+  var money = function (v) {
+    return "$" + v.toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+  };
+  var money0 = function (v) {
+    return "$" + Math.round(v).toLocaleString("en-US");
+  };
+
+  // ---- regime models ------------------------------------------------
+  // Each returns { rows: [[label, value], ...], note, total }
+
+  function smallBusiness(gross) {
+    var base   = SBS_RATE * Math.min(gross, SBS_CEIL);
+    var excess = gross > SBS_CEIL ? SBS_EXCESS * (gross - SBS_CEIL) : 0;
+    var rows   = [["Small Business tax (1% of turnover)", base]];
+    if (excess > 0) {
+      rows.push(["Above about " + money0(SBS_CEIL) + " (3% of the excess)", excess]);
+    }
+    return {
+      rows: rows,
+      note: excess > 0
+        ? "Over the " + money0(SBS_CEIL) + " ceiling \u2014 GEL 500,000 in law. The excess is taxed at 3% "
+          + "to 31 December and the status survives the year. Cross it twice running and it is revoked on "
+          + "1 January of the third. If your engagement pushes them over, expect a rate request."
+        : "Charged on gross turnover, so costs are irrelevant to this number. Conditional on the activity: "
+          + "Resolution 415 bars consulting of any kind, plus legal, medical, architectural, audit and "
+          + "personnel supply. IT, design and marketing qualify. The rate runs only from the month after "
+          + "the status is granted.",
+      total: base + excess
+    };
+  }
+
+  function standardIE(gross) {
+    // No documented expenses assumed, so profit equals the invoice.
+    var tax = PIT * gross;
+    return {
+      rows: [["Income tax (20% of profit)", tax]],
+      note: "Where consulting has to sit: Resolution 415 shuts it out of both special regimes. Tax is on "
+          + "profit rather than turnover, so documented expenses matter here \u2014 the figure above "
+          + "assumes none. No turnover ceiling, and the return is annual.",
+      total: tax
+    };
+  }
+
+  function unregistered(gross) {
+    var tax = PIT * gross;
+    return {
+      rows: [["Income tax (20% of gross, self-declared)", tax]],
+      note: "No registration, no access to 1% or 0%. A Georgian payer would withhold this 20% at source; "
+          + "a foreign payer with no permanent establishment withholds nothing, so the whole invoice leaves "
+          + "your account and they declare it themselves. Charged on gross, no expense deduction.",
+      total: tax
+    };
+  }
+
+  var MODELS = [smallBusiness, standardIE, unregistered];
+
+  // net for a given invoice
+  function netFor(gross) { return gross - MODELS[state.tab](gross).total; }
+
+  // invert: find the invoice that yields a target net (bisection)
+  function grossFor(net) {
+    var lo = net, hi = Math.max(net * 4, net + 100000);
+    for (var i = 0; i < 60; i++) {
+      var mid = (lo + hi) / 2;
+      if (netFor(mid) < net) { lo = mid; } else { hi = mid; }
+    }
+    return (lo + hi) / 2;
+  }
+
+  // ---- DOM ----------------------------------------------------------
+  var $  = function (s, r) { return (r || document).querySelector(s); };
+  var $$ = function (s, r) { return Array.prototype.slice.call((r || document).querySelectorAll(s)); };
+
+  // Scope every lookup to the calculator section. ".input__hint" also
+  // exists in the hero (the disclaimer), so an unscoped query would
+  // overwrite it.
+  var calc   = document.getElementById("calculator") || document;
+  var tabs   = $$(".calc__tab", calc);
+  var seg    = $$(".seg__btn, .seg__label", calc);
+  var rows   = $$(".row", calc);
+  var seps   = $$(".rows__sep", calc);
+  var label  = $(".input__label", calc);
+  var field  = $(".input__field", calc);
+  var hint   = $(".input__hint", calc);
+  var netEl  = $(".summary__net", calc);
+  var rateEl = $(".summary__rate", calc);
+  var note   = $(".calc__note", calc);
+  var barGreen  = $(".bar__seg-green", calc);
+  var barOrange = $(".bar__seg-orange", calc);
+  var noteHTML = note ? note.innerHTML : "";
+
+  // turn the static field into a real input
+  var input = document.createElement("input");
+  input.type = "text";
+  input.inputMode = "decimal";
+  input.setAttribute("aria-label", "Amount in US dollars");
+  input.style.cssText = "all:unset;width:100%;font:inherit;color:inherit;cursor:text;";
+  if (field) { field.innerHTML = ""; field.appendChild(input); }
+
+  function render() {
+    var gross = state.mode === "invoice" ? state.amount : grossFor(state.amount);
+    var m     = MODELS[state.tab](gross);
+    var net   = gross - m.total;
+
+    if (label) {
+      label.textContent = state.mode === "invoice"
+        ? "Annual invoice to the contractor (USD)"
+        : "Target annual net for the contractor (USD)";
+    }
+    if (document.activeElement !== input) { input.value = money(state.amount); }
+    if (hint) {
+      hint.textContent = state.mode === "invoice" ? "" : "Invoice needed: " + money0(gross);
+    }
+
+    if (rows[0]) {
+      $(".row__label", rows[0]).textContent = "Amount invoiced";
+      $(".row__value", rows[0]).textContent = money(gross);
+    }
+    // Show every row and separator, then hide the charge slots this
+    // regime does not use — a hidden row must take its separator with it,
+    // or two rules end up stacked against each other.
+    seps.forEach(function (sp) { sp.style.display = ""; });
+    rows.forEach(function (el) { el.style.display = ""; });
+
+    m.rows.forEach(function (r, i) {
+      var el = rows[i + 1];
+      if (!el) { return; }
+      $(".row__label", el).textContent = r[0];
+      $(".row__value", el).textContent = "– " + money(r[1]);
+    });
+    for (var k = m.rows.length + 1; k < rows.length - 1; k++) {
+      rows[k].style.display = "none";
+      var sp = rows[k].previousElementSibling;
+      if (sp && sp.className.indexOf("rows__sep") !== -1) { sp.style.display = "none"; }
+    }
+    var totalRow = rows[rows.length - 1];
+    if (totalRow) {
+      $(".row__label", totalRow).textContent = "Net in pocket / year";
+      $(".row__value", totalRow).textContent = money(net);
+    }
+
+    // The bar's widths are fixed at 90/10 in the stylesheet, which was true of
+    // nothing. Drive them from the model instead, inline, so the <style> block
+    // stays untouched. Green is what reaches the contractor, orange is tax.
+    if (barGreen && barOrange) {
+      var share = gross > 0 ? Math.max(0, Math.min(1, net / gross)) : 0;
+      var netPct = (share * 100).toFixed(2);
+      var taxPct = (100 - share * 100).toFixed(2);
+      barGreen.style.inset  = "0 " + taxPct + "% 0 0";
+      barOrange.style.inset = "0 0 0 " + netPct + "%";
+    }
+
+    if (netEl)  { netEl.textContent  = money0(net / 12); }
+    if (rateEl) { rateEl.textContent = (gross > 0 ? (m.total / gross * 100).toFixed(1) : "0.0") + "%"; }
+
+    // The note box is 4 lines at most: .calc__card is 485px with overflow
+    // hidden and .calc__note starts at 402px. Appending the regime note to the
+    // static one overflowed that budget, so the regime note replaces it.
+    if (note) {
+      note.innerHTML = m.note ? "<strong>" + m.note + "</strong>" : noteHTML;
+    }
+
+    tabs.forEach(function (t, i) {
+      t.classList.toggle("calc__tab--active", i === state.tab);
+      t.setAttribute("aria-selected", i === state.tab ? "true" : "false");
+    });
+  }
+
+  tabs.forEach(function (t, i) {
+    t.setAttribute("role", "tab");
+    t.setAttribute("tabindex", "0");
+    t.style.cursor = "pointer";
+    var pick = function () { state.tab = i; render(); };
+    t.addEventListener("click", pick);
+    t.addEventListener("keydown", function (e) {
+      if (e.key === "Enter" || e.key === " ") { e.preventDefault(); pick(); }
+    });
+  });
+
+  seg.forEach(function (b, i) {
+    b.style.cursor = "pointer";
+    b.setAttribute("tabindex", "0");
+    b.addEventListener("click", function () {
+      state.mode = i === 0 ? "invoice" : "net";
+      render();
+    });
+  });
+
+  input.addEventListener("input", function () {
+    var v = parseFloat(input.value.replace(/[^0-9.]/g, ""));
+    state.amount = isFinite(v) ? v : 0;
+    render();
+  });
+  input.addEventListener("blur", render);
+
+  // ---- checklist ----------------------------------------------------
+  var mis     = document.getElementById("misclassification") || document;
+  var chks    = $$(".chk", mis);
+  var noteTxt = $(".employee__note-text", mis);
+  var baseNote = noteTxt ? noteTxt.innerHTML : "";
+
+  // The Revenue Service questionnaire is published at rs.ge/EmployeevsContractor and its
+  // criteria are administrative rather than statutory, so ten ticks here is
+  // an indication and never a determination. The bands below are editorial and
+  // deliberately claim no legal threshold. Colour escalates within the existing
+  // tokens (no red exists in the palette): default -> orange text -> orange block.
+  var ORANGE = "#f66200";
+
+  function score() {
+    var n = chks.filter(function (c) {
+      return $(".chk__box", c).classList.contains("chk__box--checked");
+    }).length;
+    if (!noteTxt) { return; }
+
+    var msg;
+    if (n === 0) {
+      msg = "Nothing ticked. This reads as a genuine services relationship \u2014 keep the contract "
+          + "and the acceptance documents matching how the work actually runs.";
+    } else if (n <= 2) {
+      msg = n + " of 10 ticked. Still reads as contracting. Worth rechecking as the engagement gets "
+          + "longer \u2014 duration is what turns a single signal into a pattern.";
+    } else if (n <= 6) {
+      msg = n + " of 10 ticked. Mixed enough that it is worth revisiting the contract, and the way "
+          + "the work runs, before the next invoice. The gap between 1% and 20% is what is at stake.";
+    } else {
+      msg = n + " of 10 ticked. This reads as employment. " + baseNote;
+    }
+    noteTxt.innerHTML = msg;
+
+    var box = noteTxt.parentNode;
+    if (n >= 7) {
+      box.style.background = ORANGE;
+      noteTxt.style.color  = "#fff";
+    } else if (n >= 3) {
+      box.style.background = "";
+      noteTxt.style.color  = ORANGE;
+    } else {
+      box.style.background = "";
+      noteTxt.style.color  = "";
+    }
+  }
+
+  var TICK = '<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">'
+           + '<path d="M3.5 8.5 6.5 11.5 12.5 5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+
+  chks.forEach(function (c) {
+    var box = $(".chk__box", c);
+    c.style.cursor = "pointer";
+    c.setAttribute("role", "checkbox");
+    c.setAttribute("tabindex", "0");
+    var toggle = function () {
+      var on = box.classList.toggle("chk__box--checked");
+      box.innerHTML = on ? TICK : "";
+      c.setAttribute("aria-checked", on ? "true" : "false");
+      score();
+    };
+    c.addEventListener("click", toggle);
+    c.addEventListener("keydown", function (e) {
+      if (e.key === "Enter" || e.key === " ") { e.preventDefault(); toggle(); }
+    });
+  });
+
+  // ---- FAQ accordion ------------------------------------------------
+  $$(".faq-item", document.getElementById("faq") || document).forEach(function (item) {
+    var q   = $(".faq-item__q", item);
+    var blk = $(".faq-item__answer-block", item);
+    var btn = $(".faq-btn", item);
+    if (!blk || !q) { return; }
+    var icon = $(".faq-btn__icon", item);
+    var open = true;
+    var set = function (v) {
+      open = v;
+      blk.style.display = v ? "" : "none";
+      if (icon) { icon.classList.toggle("faq-btn__icon--rotated", v); }
+      if (btn)  { btn.setAttribute("aria-label", v ? "Collapse" : "Expand"); }
+    };
+    q.style.cursor = "pointer";
+    q.setAttribute("tabindex", "0");
+    q.addEventListener("click", function () { set(!open); });
+    q.addEventListener("keydown", function (e) {
+      if (e.key === "Enter" || e.key === " ") { e.preventDefault(); set(!open); }
+    });
+    if (btn) { btn.style.cursor = "pointer"; btn.addEventListener("click", function (e) { e.stopPropagation(); set(!open); }); }
+  });
+
+  render();
+  score();
+})();
+</script>
+</body>
+</html>
